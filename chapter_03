@@ -1,0 +1,18 @@
+import streamlit as st
+
+st.title("chai Taster Poll App")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.header("Masla Chai")
+    votel = st.button("Vote for Masla Chai")
+
+with col2:
+     st.header("Masla Chai")
+     votel2 = st.button("Vote for Masla Chai")
+  
+if votel:
+    st.success("You voted for Masla Chai")    
+elif votel2:
+    st.success("You voted for Ginger Chai")  
